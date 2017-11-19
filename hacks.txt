@@ -1,0 +1,15 @@
+Ubuntu 14.04.5 LTS 32-bit hacks,
+
++ Extract and install the .so files from the bundled .deb packages into
+  `/usr/lib`.
+
+  sudo cp libgnomeprint*so* /usr/lib
+
++ sudo apt-get install libgtk2.0-dev -y
+
++ Run "fix-8.5.3-dependencies.sh" on "ibm-lotus-notes-8.5.3.i586.deb".
+
++ Install the fixed .deb package.
+
++ If "/opt/ibm/lotus/notes/notes" fails to start again (after starting once),
+  delete the /tmp/lnotesMutex_1000 file.
